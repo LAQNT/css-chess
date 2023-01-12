@@ -1,0 +1,79 @@
+
+
+body {
+  margin-top: 70px;
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 50px;
+}
+
+
+/* board */
+
+.board-container {
+  margin-top: 50px;
+  font-size: 0;
+}
+
+
+.board-container div {
+  display: inline-block;
+  font-size: 0;
+}
+
+
+.board-container > div div {
+  height: 80px;
+  width: 80px;
+}
+
+/* rows */
+
+.row   {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(59, 59, 59);
+}
+
+.n  div:nth-child(2n+1) {
+  background-color: rgb(231, 227, 210);
+}
+
+.n2  div:nth-child(2n) {
+  background-color: rgb(231, 227, 210);
+}
+
+.row > div:hover {
+  background-color: red;
+}
+
+/* span */
+
+span{
+  position: absolute;
+  font-size: 1rem; 
+}
+
+.transparent {
+  position: relative;
+}
+
+.transparent:first-child span{
+  vertical-align: bottom;
+  bottom: 10px;
+}
+
+.transparent:last-child span{
+  line-height: 40px; 
+}
+
+.row div:last-child span {
+  margin: 30px 55px;
+}
+
+.row div:first-child span {
+  margin: 30px -60px;
+}
